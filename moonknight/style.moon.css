@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;    
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("./moonknight.jpg");    
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.main {
+    display: block;
+    flex-direction: row;    
+    width: 100vw;     
+    
+    
+}
+
+.header {
+    width: auto; 
+    display: flex; 
+    flex-direction: row;   
+    background-color: rgba(180, 170, 170, 0.372);
+    padding:20px;
+    justify-content: space-between;
+}
+
+.header img {    
+    margin: 0 0 0 40px;
+    display: flex; 
+    flex-direction: row;       
+    padding: 20px;    
+}
+
+.header .logo{
+    width: 200px;
+}
+
+.header .logo1{
+    width: auto;
+}
+
+
+
+.header a {    
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(21, 16, 16);    
+    font-style: italic;
+    font-size: 50px;
+    justify-content: flex-end;
+}
+
+.header a:hover{
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
+
+.main .header .lista {
+    padding: 10px;
+    list-style: none;
+    display: flex;    
+    float:left;        
+}
+
+.lista li{
+    position:relative;
+    float:left;
+    
+}
+
+.lista li a{
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+
+.lista li ul{
+    position:absolute;
+    top:25px;
+    left:0;    
+    display:none;
+}
+
+.lista li:hover ul, .lista li.over ul{
+    display:block;
+}
+
+.lista li ul li{    
+    display:block;
+    width:150px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.container{
+    width: 100vw;
+    height: 0 auto;
+    color: #fff;
+    text-shadow: 3px 3px 3px rgb(21, 16, 16); 
+    background-color: rgba(21, 16, 16, 0.372);
+}
+.titulo-principal{
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+
+.titulo-principal:after{
+ content: '|';
+ margin-left: 5px;
+ 
+ animation: pisca .7s infinite;
+ 
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.footer {        
+    display: block; 
+    padding: 60px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+   
+    width: auto; 
+    display: flex;      
+    background-color: rgba(21, 16, 16, 0.8);
+    padding:20px;
+}
+
+
+.footer a {    
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(21, 16, 16);    
+    font-style: italic;    
+    justify-content: flex-end;
+    font-size: 18px;    
+    padding: 20px;
+}
+
+.footer a:hover{
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
+
+span{
+    color: aqua;
+}
